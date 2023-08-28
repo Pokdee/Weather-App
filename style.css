@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  width: 100vw;
+  height: 100dvh;
+  background-image: url(./image/space.avif);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data {
+  width: 80%;
+  height: 40%;
+}
+
+.current_text {
+  font-size: 2rem;
+}
+.location_detail {
+  font-size: 3rem;
+}
+
+.weather_detail {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.temp {
+  font-size: 12rem;
+}
+.temp_text {
+  position: relative;
+}
+.temp_text::after {
+  content: "\2109";
+  position: absolute;
+  width: auto;
+  height: auto;
+  font-size: 2rem;
+  top: 10%;
+}
+
+.detail {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.detail::before {
+  content: "";
+  width: 3px;
+  height: 8rem;
+  background-color: black;
+  position: absolute;
+  top: -25%;
+  left: -15%;
+}
+
+.temp_feels {
+  position: relative;
+}
+.temp_feels::after {
+  content: "\2109";
+  position: absolute;
+  width: auto;
+  height: auto;
+  font-size: 1rem;
+  top: -5%;
+}
