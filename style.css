@@ -12,6 +12,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.searchIn {
+  height: 2rem;
+  width: 13rem;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: black;
+  font-size: 1.2rem;
+  text-indent: 0.7rem;
+  border: none;
+  outline: none;
+}
+
+.searchIn::placeholder {
+  color: rgb(67, 66, 66);
 }
 
 .data {
